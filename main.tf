@@ -27,7 +27,7 @@ resource "heroku_formation" "example" {
   app        = "${heroku_app.example.name}"
   type       = "web"
   quantity   = 1
-  size       = "Standard-1x"
+  size       = "free"
   depends_on = ["heroku_build.example"]
 }
 
